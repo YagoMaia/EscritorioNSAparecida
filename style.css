@@ -51,6 +51,11 @@ header h1, p{
     margin: auto;
 }
 
+#contact{
+    display: flex;
+    justify-content: space-around;
+}
+
 .circle{
     border-radius: 100%;
 }
