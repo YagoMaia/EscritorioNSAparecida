@@ -11,7 +11,9 @@
     grid-template-rows: 10vh 5vh 80vh 5vh;
 }
 
-
+img{
+    width: 300px;
+}
 
 header{
     background-color: crimson;
@@ -46,14 +48,33 @@ header > #container{
     width: 100px;
 }
 
+ul{
+    list-style-type: "•"; 
+}
+
+li{
+    margin-left: 5px;
+}
+
 header h1, p{
     text-align: center;
     margin: auto;
 }
 
-#contact{
+#social{
     display: flex;
     justify-content: space-around;
+}
+
+#zap{
+    width: 90%;
+    height: 25px;
+    border-radius: 20px;
+    border: nome;
+}
+
+#zap:hover{
+    background-color: brown;
 }
 
 .circle{
