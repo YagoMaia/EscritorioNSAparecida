@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+:root{
+    --background: #fff;
+    --text: #000;
+    --hover: rgb(1, 204, 1);
+    --main_color: #888888;
+
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +17,7 @@
 
 
 body{
-    background-color: #fff;
+    background-color: var(--background);
 }
 
 #logo{
@@ -19,7 +28,7 @@ body{
 
 #title > h1{
     margin: 15px 0;
-    color: #888888;
+    color: var(--main_color);
 
 }
 
@@ -33,7 +42,7 @@ img{
 }
 
 #main-container {
-    max-width: 720px;
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -72,7 +81,7 @@ header h1, p{
 }
 
 #zap{
-    background-color: #888888;
+    background-color: var(--main_color);
     width: 90%;
     border-radius: 30px;
     display: block;
@@ -85,45 +94,71 @@ header h1, p{
     padding: 16px;
     width: 95%;
     text-decoration: none;
-    color: #000;
+    color: var(--text);
+    font-size: 1.3em;
 
 }
 
-#zap:hover{
-    background-color: rgb(1, 204, 1);
+#zap:hover, .circle:hover{
+    background-color: var(--hover);
 }
 
 .circle{
     border-radius: 100%;
-    background-color: #888888;
+    background-color: var(--main_color);
     border: 0px solid black;
-    height: 45px;
-    width: 45px;
-    margin-bottom: 15px;
-}
-
-.circle:hover{
-    background-color: rgb(1, 204, 1);
+    height: 55px;
+    width: 55px;
+    margin: 15px 0;
 }
 
 img#dados{
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
     padding: 10px;
 }
 
 p, h1, h2{
-    color: #000;
+    color: var(--text);
     margin: 16px 3px;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+h1{
+    font-size: 2.4em;
 }
 
 #svg-whatsapp{
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
     margin-right: 10px;
 }
 
 #social a{
     height: 100%;
+}
+
+#github {
+    text-decoration: none;
+    color: var(--text);
+}
+
+#github:hover{
+    text-decoration: underline;
+}
+
+#serviços{
+    text-align: justify;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+#me{
+    margin: 0;
 }
